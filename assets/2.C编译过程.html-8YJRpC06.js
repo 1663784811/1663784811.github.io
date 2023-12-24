@@ -1,4 +1,4 @@
-import{_ as i}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as n,c as e,b as s}from"./app-LHo-AtqX.js";const d={},l=s(`<p>C 编译过程</p><p>gcc ***.c</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>
+import{_ as i}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as n,c as e,b as s}from"./app-9m5MOk7U.js";const d={},l=s(`<p>C 编译过程</p><p>gcc ***.c</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>
 1.预处理
     译过程的第一步预就是预处理，与处理结束后会产生一个后缀为(.i)的临时文件，这一步由预处理器完成。预处理器主要完成以下任务。
         删除所有的注释

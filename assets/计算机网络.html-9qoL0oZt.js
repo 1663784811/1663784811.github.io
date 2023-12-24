@@ -1,4 +1,4 @@
-import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as n,c as i,b as s}from"./app-LHo-AtqX.js";const l={},r=s(`<p>常用的网络协议</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>物理层（Physical Layer）：负责传输数据的物理媒介和比特流，例如电缆、光纤、无线信号等。
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as n,c as i,b as s}from"./app-9m5MOk7U.js";const l={},r=s(`<p>常用的网络协议</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>物理层（Physical Layer）：负责传输数据的物理媒介和比特流，例如电缆、光纤、无线信号等。
 
 数据链路层（Data Link Layer）：提供对物理层传输的比特流进行分帧和差错校验，确保可靠的数据传输，例如以太网协议。
     以太网（Ethernet）：是最常用的局域网技术，定义了数据链路层的帧格式和MAC地址的使用规则。

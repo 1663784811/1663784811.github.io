@@ -1,4 +1,4 @@
-import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as i,c as n,b as s}from"./app-LHo-AtqX.js";const l={},d=s(`<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>下载： 
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as i,c as n,b as s}from"./app-9m5MOk7U.js";const l={},d=s(`<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>下载： 
     https://github.com/niXman/mingw-builds-binaries/releases
     x86_64-12.2.0-release-posix-seh-rt_v10-rev1.7z
 
