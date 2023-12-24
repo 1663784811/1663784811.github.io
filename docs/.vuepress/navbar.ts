@@ -42,17 +42,17 @@ export default navbar([
             {
                 text: "STM32",
                 icon: "chrome",
-                link: "apps/Chrome",
+                link: "硬件/STM32/STM32",
             },
             {
                 text: "ESP",
                 icon: "chrome",
-                link: "apps/Chrome",
+                link: "硬件/ESP/ESP",
             },
             {
                 text: "通信协议",
                 icon: "chrome",
-                link: "apps/Chrome",
+                link: "硬件/通信协议/通信协议",
             },
         ]
     },
@@ -69,17 +69,17 @@ export default navbar([
             {
                 text: "数学/物理",
                 icon: "chrome",
-                link: "apps/Chrome",
+                link: "科学基础知识/数学物理/电路基础",
             },
             {
                 text: "生物/化学",
                 icon: "chrome",
-                link: "apps/Chrome",
+                link: "科学基础知识/生物化学",
             },
             {
                 text: "英语",
                 icon: "chrome",
-                link: "apps/Chrome",
+                link: "科学基础知识/英语",
             },
         ],
     },
