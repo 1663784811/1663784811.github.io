@@ -55,28 +55,28 @@ export default navbar([
         icon: "blog",
         link: "/数据结构和算法/01.排序算法"
     },
-    // {
-    //     text: "科学基础知识",
-    //     icon: "app",
-    //     prefix: "/",
-    //     children: [
-    //         {
-    //             text: "数学/物理",
-    //             icon: "chrome",
-    //             link: "科学基础知识/数学物理/电路基础",
-    //         },
-    //         {
-    //             text: "生物/化学",
-    //             icon: "chrome",
-    //             link: "科学基础知识/生物化学",
-    //         },
-    //         {
-    //             text: "英语",
-    //             icon: "chrome",
-    //             link: "科学基础知识/英语",
-    //         },
-    //     ],
-    // },
+    {
+        text: "科学基础知识",
+        icon: "app",
+        prefix: "/",
+        children: [
+            {
+                text: "数学/物理",
+                icon: "chrome",
+                link: "科学基础知识/数学物理/电路基础",
+            },
+            {
+                text: "生物/化学",
+                icon: "chrome",
+                link: "科学基础知识/生物化学",
+            },
+            {
+                text: "英语",
+                icon: "chrome",
+                link: "科学基础知识/英语",
+            },
+        ],
+    },
     // {
     //     text: "工具",
     //     icon: "tool",
