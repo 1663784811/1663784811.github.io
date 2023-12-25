@@ -1,7 +1,6 @@
 import {navbar} from "vuepress-theme-hope";
 
 // 精选图标：https://theme-hope.vuejs.press/zh/guide/interface/icon.html#iconfont-%E7%B2%BE%E9%80%89%E5%9B%BE%E6%A0%87
-//专题话题的路径需在尾部添加 /，否则有可能出现链接错误。比如下方「生活」中的 baby/
 export default navbar([
     {
         text: "首页",
@@ -19,19 +18,14 @@ export default navbar([
                 link: "个人理解/个人理解",
             },
             {
-                text: "C",
+                text: "C/C++",
                 icon: "chrome",
-                link: "c/1.环境搭建",
-            },
-            {
-                text: "C++",
-                icon: "chrome",
-                link: "c++",
+                link: "c/01.环境搭建.md",
             },
             {
                 text: "java",
                 icon: "chrome",
-                link: "java",
+                link: "java/01.环境搭建.md",
             },
         ]
     },
@@ -42,50 +36,50 @@ export default navbar([
             {
                 text: "STM32",
                 icon: "chrome",
-                link: "硬件/STM32/STM32",
+                link: "硬件/STM32/01.STM32简介.md",
             },
             {
                 text: "ESP",
                 icon: "chrome",
-                link: "硬件/ESP/ESP",
+                link: "硬件/ESP/01.ESP简介.md",
             },
             {
                 text: "通信协议",
                 icon: "chrome",
-                link: "硬件/通信协议/通信协议",
+                link: "硬件/通信协议/通信协议.md",
             },
         ]
     },
     {
         text: "数据结构和算法",
         icon: "blog",
-        link: "/数据结构和算法"
+        link: "/数据结构和算法/01.排序算法"
     },
-    {
-        text: "科学基础知识",
-        icon: "app",
-        prefix: "/",
-        children: [
-            {
-                text: "数学/物理",
-                icon: "chrome",
-                link: "科学基础知识/数学物理/电路基础",
-            },
-            {
-                text: "生物/化学",
-                icon: "chrome",
-                link: "科学基础知识/生物化学",
-            },
-            {
-                text: "英语",
-                icon: "chrome",
-                link: "科学基础知识/英语",
-            },
-        ],
-    },
-    {
-        text: "工具",
-        icon: "tool",
-        link: "/tool",
-    }
+    // {
+    //     text: "科学基础知识",
+    //     icon: "app",
+    //     prefix: "/",
+    //     children: [
+    //         {
+    //             text: "数学/物理",
+    //             icon: "chrome",
+    //             link: "科学基础知识/数学物理/电路基础",
+    //         },
+    //         {
+    //             text: "生物/化学",
+    //             icon: "chrome",
+    //             link: "科学基础知识/生物化学",
+    //         },
+    //         {
+    //             text: "英语",
+    //             icon: "chrome",
+    //             link: "科学基础知识/英语",
+    //         },
+    //     ],
+    // },
+    // {
+    //     text: "工具",
+    //     icon: "tool",
+    //     link: "/tool",
+    // }
 ]);
