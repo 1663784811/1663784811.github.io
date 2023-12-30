@@ -63,7 +63,7 @@ export default navbar([
             {
                 text: "数学/物理",
                 icon: "chrome",
-                link: "科学基础知识/数学物理/电路基础",
+                link: "科学基础知识/数学物理/01.电路基础",
             },
             {
                 text: "生物/化学",
