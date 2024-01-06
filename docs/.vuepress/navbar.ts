@@ -27,6 +27,11 @@ export default navbar([
                 icon: "chrome",
                 link: "java/01.环境搭建.md",
             },
+            {
+                text: "安卓",
+                icon: "chrome",
+                link: "安卓/01.环境搭建.md",
+            },
         ]
     },
     {
@@ -48,6 +53,21 @@ export default navbar([
                 icon: "chrome",
                 link: "硬件/通信协议/通信协议.md",
             },
+            {
+                text: "freertos",
+                icon: "chrome",
+                link: "硬件/freertos/10.freertos.md",
+            },
+            {
+                text: "lvgl",
+                icon: "chrome",
+                link: "硬件/lvgl/lvgl.md",
+            },
+            {
+                text: "Cmake",
+                icon: "chrome",
+                link: "硬件/cmake/01.cmaker简介.md",
+            }
         ]
     },
     {
