@@ -13,11 +13,6 @@ export default navbar([
         prefix: "编程语言",
         children: [
             {
-                text: "个人理解",
-                icon: "chrome",
-                link: "个人理解/个人理解",
-            },
-            {
                 text: "C/C++",
                 icon: "chrome",
                 link: "c/01.环境搭建.md",
@@ -56,7 +51,7 @@ export default navbar([
             {
                 text: "freertos",
                 icon: "chrome",
-                link: "硬件/freertos/10.freertos.md",
+                link: "硬件/freertos/01.freertos环境搭建.md",
             },
             {
                 text: "lvgl",
