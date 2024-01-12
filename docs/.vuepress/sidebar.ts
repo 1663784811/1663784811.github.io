@@ -15,4 +15,5 @@ export default sidebar({
     "/科学基础知识/数学物理": "structure",
     "/科学基础知识/生物化学": "structure",
     "/科学基础知识/英语": "structure",
+    "/示例": "structure",
 });

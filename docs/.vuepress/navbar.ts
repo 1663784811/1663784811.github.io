@@ -92,9 +92,9 @@ export default navbar([
             },
         ],
     },
-    // {
-    //     text: "工具",
-    //     icon: "tool",
-    //     link: "/tool",
-    // }
+    {
+        text: "基本示例",
+        icon: "tool",
+        link: "/示例/SpringBoot集成WebSocket.md",
+    }
 ]);
