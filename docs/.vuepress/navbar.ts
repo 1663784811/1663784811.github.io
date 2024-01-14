@@ -96,5 +96,10 @@ export default navbar([
         text: "基本示例",
         icon: "tool",
         link: "/示例/SpringBoot集成WebSocket.md",
+    },
+    {
+        text: "软件使用或安装",
+        icon: "tool",
+        link: "/软件使用或安装/01.Docker安装.md",
     }
 ]);
