@@ -18,6 +18,11 @@ export default navbar([
                 link: "c/01.环境搭建.md",
             },
             {
+                text: "linux",
+                icon: "chrome",
+                link: "linux/01.分区.md",
+            },
+            {
                 text: "java",
                 icon: "chrome",
                 link: "java/01.环境搭建.md",
