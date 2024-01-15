@@ -64,9 +64,9 @@ export default navbar([
                 link: "硬件/lvgl/lvgl.md",
             },
             {
-                text: "Cmake",
+                text: "编译器",
                 icon: "chrome",
-                link: "硬件/cmake/01.cmaker简介.md",
+                link: "硬件/cmake/01.gcc简介.md",
             }
         ]
     },
