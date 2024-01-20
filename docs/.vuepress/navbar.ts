@@ -97,7 +97,7 @@ export default navbar([
             },{
                 text: "人工智能",
                 icon: "chrome",
-                link: "科学基础知识/人工智能/机器学习.md",
+                link: "科学基础知识/人工智能/01.机器学习.md",
             },
         ],
     },
