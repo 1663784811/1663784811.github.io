@@ -51,6 +51,40 @@ UI 页面设计
 ```
 
 
+## 项目架构
+```text
+
+1.超级管理员
+
+2.企业管理
+
+3.app管理端
+
+4.用户端
+
+
+规则
+1.所有的实运营的都在app端: 公众号、小程序、微信支付、支付宝支付
+2.路由划分
+    /tx/业务/                    超级管理员
+    /admin/企业Code/业务/         企业管理
+    /appAdmin/appID/业务/        app管理端
+    /app/appID/业务/             用户端
+3.页面命名
+    企业-app名-页面名           ent_shopping_user            企业
+    app管理-app名-页面名        appAdmin_shopping_user       app管理端
+    app-app名-页面名           app_shopping_user            用户端
+    
+
+4.项目命名
+    admin                    超级管理员
+    admin_enterprise         企业管理
+    app名_admin               app管理端
+    app名_app                 app用户端
+    app名_guide               app导购端( 分销 )
+
+
+```
 
 
 
