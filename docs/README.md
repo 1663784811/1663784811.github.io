@@ -84,6 +84,11 @@ UI 页面设计
     app名_guide               app导购端( 分销 )
 
 
+
+5.版权问题
+    字体、图片、音乐、视频
+
+
 ```
 
 ## UI 设计规范
@@ -124,13 +129,23 @@ px                                 pt
 
 
 
+
+
 ```
 
 
-
-
-
-
+## tabBar 示例
+![img.png](img/01img.png)
+```text
+一倍图390 组件标准
+    tabBar
+        高: 49px
+        有icon
+            icon: 盒子20x20  icon高:16px 宽:自适应
+            字: 14px 不多于4个字 margin-top:4px
+        无icon
+            字: 16px
+```
 
 
 
