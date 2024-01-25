@@ -7,6 +7,7 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 
 export default defineUserConfig({
+  port: 9999, //端口号
   // 网站语言，默认为中文
   lang: "zh-CN",
   // 网站标题
