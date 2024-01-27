@@ -110,5 +110,10 @@ export default navbar([
         text: "软件使用或安装",
         icon: "tool",
         link: "/软件使用或安装/01.Docker安装.md",
+    },
+    {
+        text: "UI设计",
+        icon: "tool",
+        link: "/UI设计/01.UI设计规范.md",
     }
 ]);
