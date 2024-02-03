@@ -115,5 +115,10 @@ export default navbar([
         text: "UI设计",
         icon: "tool",
         link: "/UI设计/01.UI设计规范.md",
+    },
+    {
+        text: "项目案例",
+        icon: "tool",
+        link: "/项目案例/点餐系统/01.客户需求.md",
     }
 ]);
