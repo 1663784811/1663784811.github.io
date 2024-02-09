@@ -20,4 +20,5 @@ export default sidebar({
     "/示例": "structure",
     "/软件使用或安装": "structure",
     "/UI设计": "structure",
+    "/项目案例": "structure",
 });
