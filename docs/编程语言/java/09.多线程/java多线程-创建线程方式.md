@@ -1,16 +1,16 @@
 ---
 article: false
-title: java多线程-基本概念-创建线程方式
+title: java多线程-创建线程方式
 ---
 ### 基本概念
 
-线程状态：
-    NEW(新建) 、
-    RUNNABLE(运行)、
-    BLOCKED(阻塞)、
-    WAITING(等待)、
-    TIMED_WAITING(超时等待)、
-    TERMINATED(执行完毕)
+线程状态：<br/>
+    NEW(新建) 、<br/>
+    RUNNABLE(运行)、<br/>
+    BLOCKED(阻塞)、<br/>
+    WAITING(等待)、<br/>
+    TIMED_WAITING(超时等待)、<br/>
+    TERMINATED(执行完毕)<br/>
 ```text
 提示：源码 java.lang.Thread.State 找到
 ```
