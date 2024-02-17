@@ -1,6 +1,6 @@
 ---
 article: false
-title: java多线程-JUC
+title: 多线程01-JUC
 ---
 
 ######################################
