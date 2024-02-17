@@ -109,7 +109,7 @@ export default navbar([
     {
         text: "软件使用或安装",
         icon: "tool",
-        link: "/软件使用或安装/01.Docker安装.md",
+        link: "/软件使用或安装/01.软件初始化设置.md",
     },
     {
         text: "UI设计",
