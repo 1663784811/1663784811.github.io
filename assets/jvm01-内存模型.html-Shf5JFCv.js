@@ -1,0 +1,1 @@
+import{_}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as e,c as t}from"./app-WM5RSnk_.js";const c={};function o(r,m){return e(),t("div")}const a=_(c,[["render",o],["__file","jvm01-内存模型.html.vue"]]);export{a as default};
