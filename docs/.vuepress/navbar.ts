@@ -39,6 +39,11 @@ export default navbar([
         icon: "blog",
         children: [
             {
+                text: "电路图设计",
+                icon: "chrome",
+                link: "硬件/电路图设计/01.AltiumDesigner简介.md",
+            },
+            {
                 text: "STM32",
                 icon: "chrome",
                 link: "硬件/STM32/01.STM32简介.md",
