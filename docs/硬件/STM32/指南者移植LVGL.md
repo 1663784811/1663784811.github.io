@@ -3,6 +3,7 @@ article: false
 title: 指南者移植LVGL
 icon: check
 ---
+[实验代码](https://github.com/1663784811/1663784811.github.io/tree/main/file)
 
 ### 第一步：下载LVGL
 [GitHub下载地址](https://github.com/lvgl/lvgl/releases/tag/v8.2.0)
