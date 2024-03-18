@@ -54,7 +54,7 @@ export default navbar([
                 link: "硬件/ESP/01.ESP简介.md",
             },
             {
-                text: "通信协议",
+                text: "通信协议与电子元件",
                 icon: "chrome",
                 link: "硬件/通信协议/通信协议.md",
             },
