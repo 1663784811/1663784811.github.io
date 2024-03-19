@@ -14,8 +14,25 @@ C代码(.c) -> 对象代码(.o) -> 映像文件(链接.axf) -> 16进制文件
 
 ## 1.2 程序的组成
 
-Code: 代码域
-RO-data: 只读数据域
-RW-data: 可读写数据域
-ZI-data: 
+Code: 代码域 <br>
+RO-data: 只读数据域 <br>
+RW-data: 可读写数据域 <br>
+ZI-data:  <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
