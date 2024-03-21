@@ -72,6 +72,11 @@ export default navbar([
                 text: "编译器",
                 icon: "chrome",
                 link: "硬件/cmake/01.gcc简介.md",
+            },
+            {
+                text: "QT",
+                icon: "chrome",
+                link: "硬件/QT/01.qt环境搭建.md",
             }
         ]
     },
