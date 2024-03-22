@@ -31,6 +31,9 @@ services:
     image: registry
     restart: always
     container_name: registry
+    environment:
+      - "REGISTRY_HTTP_ADDR=0.0.0.0:5000"
+      - "REGISTRY_HTTP_HEADERS=Access-Control-Allow-Origin:*,Access-Control-Allow-Methods:GET,HEAD,PUT,POST,DELETE,OPTIONS,Access-Control-Allow-Headers:Accept,Content-Type,Content-Length,Accept-Encoding,X-Registry-Auth,Authorization"
     ports:
       - 5000:5000
     volumes:
