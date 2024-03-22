@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HLS Player</title>
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.15.0/videojs-contrib-hls.min.js"></script>
+</head>
+<body>
+<video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup='{"fluid":true}'>
+    <source src="http://192.168.118.9/hls/.m3u8" type="application/x-mpegURL">
+</video>
+<script>
+    var player = videojs('my-video');
+    player.play();
+</script>
+</body>
+</html>
