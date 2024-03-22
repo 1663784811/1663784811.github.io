@@ -44,9 +44,12 @@ service docker stop
 ```shell
 docker ps -a
 ```
-加速器配置
+加速器配置 <br>
+registry-mirrors: 配置 Docker 镜像仓库的镜像地址，用于加速镜像的拉取。 <br>
+insecure-registries: 允许连接到不安全（未加密或未经身份验证）的镜像仓库。 <br>
+exec-opts: 运行时执行选项。 <br>
+data-root: 指定 Docker 存储容器和镜像的根目录。默认情况下，这个值是 /var/lib/docker
 ```shell
-
 vi /etc/docker/daemon.json
 {
   "registry-mirrors": ["http://192.168.118.8","http://hub-mirror.c.163.com","https://registry.docker-cn.com","https://kxv08zer.mirror.aliyuncs.com"],
