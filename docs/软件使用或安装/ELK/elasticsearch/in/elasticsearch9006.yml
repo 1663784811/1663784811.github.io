@@ -1,0 +1,97 @@
+# ======================== Elasticsearch Configuration =========================
+#
+# NOTE: Elasticsearch comes with reasonable defaults for most settings.
+#       Before you set out to tweak and tune the configuration, make sure you
+#       understand what are you trying to accomplish and the consequences.
+#
+# The primary way of configuring a node is via this file. This template lists
+# the most important settings you may want to configure for a production cluster.
+#
+# Please consult the documentation for further information on configuration options:
+# https://www.elastic.co/guide/en/elasticsearch/reference/index.html
+#
+# ---------------------------------- Cluster   集群 -----------------------------------
+#
+# Use a descriptive name for your cluster:
+#
+cluster.name: clusterName
+#
+# ------------------------------------ Node   节点 ------------------------------------
+#
+# Use a descriptive name for the node:
+#
+node.name: node9006
+# node.roles: [master,data]
+node.roles: [data]
+#
+# Add custom attributes to the node:
+#
+#node.attr.rack: r1
+#
+# ----------------------------------- Paths   路径   ------------------------------------
+#
+# Path to directory where to store the data (separate multiple locations by comma):
+#
+path.data: ./data
+#
+# Path to log files:
+#
+path.logs: ./logs
+#
+# ----------------------------------- Memory   内存   -----------------------------------
+#
+# Lock the memory on startup:  内存交换对节点的性能和稳定性非常不利，需要让启动Elasticsearch时锁定内存
+#
+bootstrap.memory_lock: true
+#
+# Make sure that the heap size is set to about half the memory available
+# on the system and that the owner of the process is allowed to use this
+# limit.
+#
+# Elasticsearch performs poorly when the system is swapping the memory.
+#
+# ---------------------------------- Network    网络  -----------------------------------
+#
+# By default Elasticsearch is only accessible on localhost. Set a different
+# address here to expose this node on the network:
+#
+network.host: 0.0.0.0
+#
+# By default Elasticsearch listens for HTTP traffic on the first free port it
+# finds starting at 9200. Set a specific HTTP port here:
+#
+http.port: 9006
+#集群通讯端口号
+transport.port: 8006
+#
+# For more information, consult the network module documentation.
+#
+# --------------------------------- Discovery      发现   ----------------------------------
+#
+# Pass an initial list of hosts to perform discovery when this node is started:
+# The default list of hosts is ["127.0.0.1", "[::1]"]
+#
+discovery.seed_hosts: ["192.168.0.130:8001","192.168.0.130:8002","192.168.0.130:8003","192.168.0.130:8004","192.168.0.130:8005","192.168.0.130:8006"]
+
+#
+# Bootstrap the cluster using an initial set of master-eligible nodes:
+#
+cluster.initial_master_nodes: ["node9001","node9002","node9003"]
+#
+# For more information, consult the discovery and cluster formation module documentation.
+#
+# ---------------------------------- Various      各色各样的   -----------------------------------
+#
+# Allow wildcard deletion of indices:
+#  允许通配符删除索引
+action.destructive_requires_name: true
+#跨域配置
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+http.cors.allow-headers: Authorization,X-Requested-With,Content-Length,Content-Type
+xpack.security.enabled: false
+
+
+
+
+

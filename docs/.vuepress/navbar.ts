@@ -32,6 +32,11 @@ export default navbar([
                 icon: "chrome",
                 link: "安卓/01.环境搭建.md",
             },
+            {
+                text: "python",
+                icon: "chrome",
+                link: "python/01.环境搭建.md",
+            },
         ]
     },
     {
