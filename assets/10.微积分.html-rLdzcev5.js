@@ -1,0 +1,3 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as a,c as r,a as t}from"./app-BskwTrER.js";const d={},h=t(`<h3 id="研究的是变化的规律" tabindex="-1"><a class="header-anchor" href="#研究的是变化的规律" aria-hidden="true">#</a> 研究的是变化的规律</h3><h4 id="无穷" tabindex="-1"><a class="header-anchor" href="#无穷" aria-hidden="true">#</a> 无穷</h4><pre><code>无穷小
+无穷大
+</code></pre><p>导数-&gt;斜率</p><h3 id="微分" tabindex="-1"><a class="header-anchor" href="#微分" aria-hidden="true">#</a> 微分</h3><p>微分就是: 导数-&gt;斜率</p><h3 id="积分" tabindex="-1"><a class="header-anchor" href="#积分" aria-hidden="true">#</a> 积分</h3>`,7),c=[h];function n(i,o){return a(),r("div",null,c)}const l=e(d,[["render",n],["__file","10.微积分.html.vue"]]);export{l as default};
