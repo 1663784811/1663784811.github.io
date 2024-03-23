@@ -57,7 +57,13 @@ vi /etc/docker/daemon.json
   "exec-opts": ["native.cgroupdriver=systemd"]
 }
 ```
-
+```shell
+{
+  "registry-mirrors": ["http://192.168.0.10"],
+  "insecure-registries": ["192.168.0.10:8082"],
+  "exec-opts": ["native.cgroupdriver=systemd"]
+}
+```
 重载所有修改过的配置文件 重新启动Docker服务
 ```shell
 systemctl daemon-reload
