@@ -7,6 +7,7 @@ export default sidebar({
     "/编程语言/linux": "structure",
     "/编程语言/python": "structure",
     "/编程语言/安卓": "structure",
+    "/编程语言/汇编": "structure",
     "/硬件/电路图设计": "structure",
     "/硬件/STM32": "structure",
     "/硬件/ESP": "structure",
