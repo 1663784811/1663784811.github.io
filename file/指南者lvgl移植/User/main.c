@@ -50,6 +50,3 @@ int main(void)
 	}
 		
 }
-
- 
- 
