@@ -52,7 +52,7 @@ export default hopeTheme({
   sidebarSorter: ['readme', 'order', 'title'],
 
   // 页脚，支持使用 HTMLString 以显示备案信息等
-  footer: `Copyright © 2023-present <span>鱼头笔记</span>`,
+  footer: `Copyright © 2024-present <span>鱼头笔记</span>`,
   displayFooter: true,
   // copyright 默认为 Copyright © <作者>，设置为禁用以自定义设置页脚
   copyright: false,
