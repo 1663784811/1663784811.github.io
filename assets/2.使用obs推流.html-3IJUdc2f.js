@@ -1,1 +1,0 @@
-import{_}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as e,c as o}from"./app-JHrmQMtF.js";const t={};function c(r,s){return e(),o("div")}const f=_(t,[["render",c],["__file","2.使用obs推流.html.vue"]]);export{f as default};
