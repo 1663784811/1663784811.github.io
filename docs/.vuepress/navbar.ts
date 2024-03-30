@@ -18,19 +18,9 @@ export default navbar([
                 link: "c/01.环境搭建.md",
             },
             {
-                text: "linux",
-                icon: "chrome",
-                link: "linux/01.分区.md",
-            },
-            {
                 text: "java",
                 icon: "chrome",
                 link: "java/01.环境搭建.md",
-            },
-            {
-                text: "安卓",
-                icon: "chrome",
-                link: "安卓/01.环境搭建.md",
             },
             {
                 text: "python",
@@ -41,6 +31,16 @@ export default navbar([
                 text: "汇编",
                 icon: "chrome",
                 link: "汇编/01.环境搭建.md",
+            },
+            {
+                text: "安卓",
+                icon: "chrome",
+                link: "安卓/01.环境搭建.md",
+            },
+            {
+                text: "linux",
+                icon: "chrome",
+                link: "linux/01.分区.md",
             },
         ]
     },
@@ -110,15 +110,15 @@ export default navbar([
                 icon: "chrome",
                 link: "科学基础知识/生物化学",
             },
-            {
-                text: "英语",
-                icon: "chrome",
-                link: "科学基础知识/英语",
-            },{
-                text: "人工智能",
-                icon: "chrome",
-                link: "科学基础知识/人工智能/01.机器学习.md",
-            },
+            // {
+            //     text: "英语",
+            //     icon: "chrome",
+            //     link: "科学基础知识/英语",
+            // },{
+            //     text: "人工智能",
+            //     icon: "chrome",
+            //     link: "科学基础知识/人工智能/01.机器学习.md",
+            // },
         ],
     },
     {
