@@ -4,6 +4,55 @@ title: 鱼头笔记
 icon: note
 ---
 
+### 硬件
+
+```text
+单片机资源:
+
+
+通信协议:
+    usart
+    I2C
+    CAN
+    SPI
+    ADC
+    DMA ( stm32 )
+    FSMC ( 灵活静态存储器控制器 )
+    
+具体硬件:
+   EEPROM
+   FLASH
+   文件系统
+       FAT
+   LCD
+   触摸屏 (  电容屏、电阻屏  )
+   SD卡 ( TF卡 )  
+   MPU6050 (  陀罗仪  )
+   摄像头
+   电机
+       无刷电机
+       步进电机
+       伺服电机
+   音频播放
+   WIFI
+   蓝牙
+   Zigbee
+   GSM
+   LoRa
+   NFC
+
+实物
+    打印机
+    无人机
+    云台
+        
+
+```
+
+
+
+
+### 软件
 鱼头笔记
 
 项目架构
