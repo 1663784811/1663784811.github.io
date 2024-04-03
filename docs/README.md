@@ -16,6 +16,7 @@ icon: note
     CAN
     SPI
     ADC
+    DAC
     DMA ( stm32 )
     FSMC ( 灵活静态存储器控制器 )
     
@@ -34,6 +35,7 @@ icon: note
        步进电机
        伺服电机
    音频播放
+       读取mp3文件-> 解码为数字信号 -> DAC 转为模拟信号 -> 功率放大 -> 扬声器
    WIFI
    蓝牙
    Zigbee
