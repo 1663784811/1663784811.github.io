@@ -1,0 +1,2 @@
+import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as s,c as n,b as e}from"./app-EfuZw3X8.js";const a={},_=e("p",null,"View 绘制原理:",-1),c=e("div",{class:"language-text line-numbers-mode","data-ext":"text"},[e("pre",{class:"language-text"},[e("code",null,`
+`)]),e("div",{class:"line-numbers","aria-hidden":"true"},[e("div",{class:"line-number"})])],-1),l=[_,c];function o(i,r){return s(),n("div",null,l)}const m=t(a,[["render",o],["__file","06.自定义View.html.vue"]]);export{m as default};
