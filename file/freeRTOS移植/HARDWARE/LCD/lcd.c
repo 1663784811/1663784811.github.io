@@ -393,7 +393,7 @@ void LCD_ShowChinese32x32(u16 x,u16 y,u8 *s,u16 fc,u16 bc,u8 sizey,u8 mode)
 void LCD_ShowChar(u16 x,u16 y,u8 num,u16 fc,u16 bc,u8 sizey,u8 mode)
 {
 	u8 temp,sizex,t,m=0;
-	u16 i,TypefaceNum;//一个字符所占字节大小
+	u16 i,TypefaceNum;//一个字符图形所占字节大小
 	u16 x0=x;
 	sizex=sizey/2;
 	TypefaceNum=(sizex/8+((sizex%8)?1:0))*sizey;
@@ -406,6 +406,7 @@ void LCD_ShowChar(u16 x,u16 y,u8 num,u16 fc,u16 bc,u8 sizey,u8 mode)
 		else if(sizey==24)temp=ascii_2412[num][i];		 //调用12x24字体
 		else if(sizey==32)temp=ascii_3216[num][i];		 //调用16x32字体
 		else return;
+		
 		for(t=0;t<8;t++)
 		{
 			if(!mode)//非叠加模式
@@ -431,6 +432,7 @@ void LCD_ShowChar(u16 x,u16 y,u8 num,u16 fc,u16 bc,u8 sizey,u8 mode)
 				}
 			}
 		}
+		
 	}   	 	  
 }
 

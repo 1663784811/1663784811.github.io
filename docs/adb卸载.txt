@@ -1,0 +1,26 @@
+```
+adb 获取已经安装应用
+
+adb shell pm list packages
+
+```
+
+adb uninstall com.miui.hybrid
+pm uninstall -k --user 0 com.miui.hybrid
+pm uninstall -k --user 0 com.xiaomi.payment
+pm uninstall -k --user 0 com.miui.yellowpage
+pm uninstall -k --user 0 com.miui.voiceassist
+pm uninstall -k --user 0 com.xiaomi.xmsf
+pm uninstall -k --user 0 com.miui.personalassistant
+pm uninstall -k --user 0 com.miui.miservice
+pm uninstall -k --user 0 com.sohu.inputmethod.sogou.xiaomi
+pm uninstall -k --user 0 com.miui.cloudbackup
+pm uninstall -k --user 0 com.miui.micloudsync
+pm uninstall -k --user 0 com.xiaomi.micloud.sdk
+pm uninstall -k --user 0 com.miui.cloudservice
+pm uninstall -k --user 0 com.android.email
+pm uninstall -k --user 0 com.xiaomi.migameservice
+pm uninstall -k --user 0 com.xiaomi.gamecenter.sdk.service
+
+
+
