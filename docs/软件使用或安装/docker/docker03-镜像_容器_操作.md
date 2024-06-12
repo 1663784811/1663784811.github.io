@@ -28,6 +28,13 @@ title: 02. docker 镜像、容器 操作
    docker rmi docker images -q
 ```
 
+查看镜像详情
+```shell
+    docker inspect 镜像名:版本号
+```
+
+
+
 二、容器操作
 查看容器
 查看正在运行的容器

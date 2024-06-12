@@ -15,6 +15,7 @@ export default sidebar({
     "/硬件/通信协议": "structure",
     "/硬件/cmake": "structure",
     "/硬件/lvgl": "structure",
+    "/硬件/u8g2": "structure",
     "/硬件/QT": "structure",
     "/数据结构和算法/": "structure",
     "/科学基础知识/数学物理": "structure",
