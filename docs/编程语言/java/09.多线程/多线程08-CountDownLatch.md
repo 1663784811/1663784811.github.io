@@ -3,6 +3,10 @@ article: false
 title: 多线程08-CountDownLatch
 ---
 
+
+## CountDownLatch 等待
+
+
 ```java
 import lombok.Getter;
 import java.util.concurrent.CountDownLatch;

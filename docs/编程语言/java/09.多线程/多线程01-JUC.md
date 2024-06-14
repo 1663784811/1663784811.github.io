@@ -28,6 +28,7 @@ title: 多线程01-JUC
         
     用户线程：
     守护线程：
+        daemonThread.setDaemon(true); // 将线程设置为守护线程
     异步任务接口: Future
             FutureTask
             RunnableScheduledFuture -> ScheduledThreadPoolExecutor
