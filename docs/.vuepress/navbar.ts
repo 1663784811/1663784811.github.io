@@ -22,16 +22,16 @@ export default navbar([
                 icon: "chrome",
                 link: "java/01.环境搭建.md",
             },
-            {
-                text: "python",
-                icon: "chrome",
-                link: "python/01.环境搭建.md",
-            },
-            {
-                text: "汇编",
-                icon: "chrome",
-                link: "汇编/01.环境搭建.md",
-            },
+            // {
+            //     text: "python",
+            //     icon: "chrome",
+            //     link: "python/01.环境搭建.md",
+            // },
+            // {
+            //     text: "汇编",
+            //     icon: "chrome",
+            //     link: "汇编/01.环境搭建.md",
+            // },
             {
                 text: "安卓",
                 icon: "chrome",
@@ -92,6 +92,11 @@ export default navbar([
                 text: "QT",
                 icon: "chrome",
                 link: "硬件/QT/01.qt环境搭建.md",
+            },
+            {
+                text: "FOC",
+                icon: "chrome",
+                link: "硬件/FOC/01.foc原理.md",
             }
         ]
     },
