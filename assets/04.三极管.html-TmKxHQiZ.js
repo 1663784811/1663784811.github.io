@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as e,c as s,b as _}from"./app-8chMZ8X4.js";const o="/assets/img_11-AjHLDb8I.png",c={},n=_("p",null,"三极管内部结构",-1),r=_("p",null,[_("img",{src:o,alt:"img_11.png"})],-1),l=[n,r];function a(i,m){return e(),s("div",null,l)}const f=t(c,[["render",a],["__file","04.三极管.html.vue"]]);export{f as default};
