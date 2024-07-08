@@ -1,0 +1,112 @@
+version: '3'
+
+services:
+  emqx1:
+    restart: always
+    image: emqx:5.7.0
+    container_name: emqx1
+    environment:
+      - "EMQX_NODE_NAME=emqx@node1.emqx.io"
+      - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
+      - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io,emqx@node2.emqx.io,emqx@node3.emqx.io,emqx@node4.emqx.io]"
+    healthcheck:
+      test: ["CMD", "/opt/emqx/bin/emqx", "ctl", "status"]
+      interval: 5s
+      timeout: 25s
+      retries: 5
+    networks:
+      emqx-bridge:
+        aliases:
+          - node1.emqx.io
+    ports:
+      - 1883:1883
+      - 8083:8083
+      - 8084:8084
+      - 8883:8883
+      - 18083:18083
+    volumes:
+      - ./emqx1_data:/opt/emqx/data
+
+  emqx2:
+    restart: always
+    image: emqx:5.7.0
+    container_name: emqx2
+    environment:
+      - "EMQX_NODE_NAME=emqx@node2.emqx.io"
+      - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
+      - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io,emqx@node2.emqx.io,emqx@node3.emqx.io,emqx@node4.emqx.io]"
+    healthcheck:
+      test: ["CMD", "/opt/emqx/bin/emqx", "ctl", "status"]
+      interval: 5s
+      timeout: 25s
+      retries: 5
+    networks:
+      emqx-bridge:
+        aliases:
+          - node2.emqx.io
+    ports:
+      - 20001:1883
+      - 20002:8083
+      - 20003:8084
+      - 20004:8883
+      - 20005:18083
+    volumes:
+      - ./emqx2_data:/opt/emqx/data
+  emqx3:
+    restart: always
+    image: emqx:5.7.0
+    container_name: emqx3
+    environment:
+      - "EMQX_NODE_NAME=emqx@node3.emqx.io"
+      - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
+      - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io,emqx@node2.emqx.io,emqx@node3.emqx.io,emqx@node4.emqx.io]"
+    healthcheck:
+      test: ["CMD", "/opt/emqx/bin/emqx", "ctl", "status"]
+      interval: 5s
+      timeout: 25s
+      retries: 5
+    networks:
+      emqx-bridge:
+        aliases:
+          - node3.emqx.io
+    ports:
+      - 30001:1883
+      - 30002:8083
+      - 30003:8084
+      - 30004:8883
+      - 30005:18083
+    volumes:
+      - ./emqx3_data:/opt/emqx/data
+  emqx4:
+    restart: always
+    image: emqx:5.7.0
+    container_name: emqx4
+    environment:
+      - "EMQX_NODE_NAME=emqx@node4.emqx.io"
+      - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
+      - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io,emqx@node2.emqx.io,emqx@node3.emqx.io,emqx@node4.emqx.io]"
+    healthcheck:
+      test: ["CMD", "/opt/emqx/bin/emqx", "ctl", "status"]
+      interval: 5s
+      timeout: 25s
+      retries: 5
+    networks:
+      emqx-bridge:
+        aliases:
+          - node4.emqx.io
+    ports:
+      - 40001:1883
+      - 40002:8083
+      - 40003:8084
+      - 40004:8883
+      - 40005:18083
+    volumes:
+      - ./emqx4_data:/opt/emqx/data
+
+
+networks:
+  emqx-bridge:
+    driver: bridge
+
+
+

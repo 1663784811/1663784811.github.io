@@ -69,3 +69,12 @@ docker attach 容器名
 docker exec -it 容器名 /bin/bash
 ```
 
+退出容器
+```shell
+# 快捷键  ctl + p + q
+```
+
+
+
+
+
