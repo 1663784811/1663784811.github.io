@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c as s,b as _}from"./app-9pqFnJBk.js";const o="/assets/img_8-i1GAkKvh.png",c={},n=_("p",null,[_("img",{src:o,alt:"img_8.png"})],-1),r=[n];function a(i,l){return t(),s("div",null,r)}const f=e(c,[["render",a],["__file","34.红外遥控.html.vue"]]);export{f as default};
