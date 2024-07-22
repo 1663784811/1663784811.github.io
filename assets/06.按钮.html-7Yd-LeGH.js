@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as _,c as s,b as e}from"./app-_5rfG-fE.js";const o="/assets/img-KCpg27q9.png",c={},n=e("p",null,[e("img",{src:o,alt:""})],-1),r=[n];function a(l,i){return _(),s("div",null,r)}const f=t(c,[["render",a],["__file","06.按钮.html.vue"]]);export{f as default};
