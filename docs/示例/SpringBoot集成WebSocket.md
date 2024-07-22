@@ -5,7 +5,7 @@ icon: check
 ---
 
 ## 第一步：添加依赖
-```text
+```xml
  <dependency>
    <groupId>org.springframework.boot</groupId>
    <artifactId>spring-boot-starter-websocket</artifactId>
