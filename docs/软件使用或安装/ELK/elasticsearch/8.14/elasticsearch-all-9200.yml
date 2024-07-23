@@ -72,7 +72,7 @@ http.port: 9200
 # The default list of hosts is ["127.0.0.1", "[::1]"]
 #
 #discovery.seed_hosts: ["192.168.0.136:9200", "192.168.0.111:9200", "192.168.0.150:9200"]
-discovery.seed_hosts: ["192.168.0.158:8300", "192.168.0.136:9300", "192.168.0.111:9300", "192.168.0.150:9300"]
+discovery.seed_hosts: ["192.168.0.158:9300", "192.168.0.136:9300", "192.168.0.111:9300", "192.168.0.150:9300"]
 
 
 
@@ -124,7 +124,7 @@ http.host: 0.0.0.0
 # Allow other nodes to join the cluster from anywhere
 # Connections are encrypted and mutually authenticated
 transport.host: 192.168.0.158
-transport.port: 8300
+transport.port: 9300
 #----------------------- END SECURITY AUTO CONFIGURATION -------------------------
 
 
