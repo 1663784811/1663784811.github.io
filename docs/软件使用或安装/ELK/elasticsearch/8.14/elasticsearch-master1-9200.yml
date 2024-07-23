@@ -94,7 +94,7 @@ cluster.initial_master_nodes: ["master-1","master-2","master-3"]
 
 #----------------------- BEGIN SECURITY AUTO CONFIGURATION -----------------------
 #
-# The following settings, TLS certificates, and keys have been automatically      
+# The following settings, TLS certificates, and keys have been automatically
 # generated to configure Elasticsearch security features on 22-07-2024 19:23:10
 #
 # --------------------------------------------------------------------------------
@@ -128,16 +128,15 @@ transport.port: 9300
 #----------------------- END SECURITY AUTO CONFIGURATION -------------------------
 
 
+################################
+node.roles: [master]
 
 
 
 
 
 
-
-
-
-
+################################
 
 
 
