@@ -69,15 +69,15 @@ http.port: 9200
 # Pass an initial list of hosts to perform discovery when this node is started:
 # The default list of hosts is ["127.0.0.1", "[::1]"]
 #
+#discovery.seed_hosts: ["192.168.0.136:9200", "192.168.0.111:9200", "192.168.0.150:9200"]
 discovery.seed_hosts: ["192.168.0.136:9200", "192.168.0.111:9200", "192.168.0.150:9200"]
-
 
 
 
 # 使用初始的一组符合主节点条件的节点引导集群：
 # Bootstrap the cluster using an initial set of master-eligible nodes:
 #
-cluster.initial_master_nodes: ["192.168.0.136:9200", "192.168.0.111:9200", "192.168.0.150:9200"]
+#cluster.initial_master_nodes: ["192.168.0.136:9200", "192.168.0.111:9200", "192.168.0.150:9200"]
 
 
 
@@ -126,15 +126,6 @@ http.host: 0.0.0.0
 transport.host: 0.0.0.0
 
 #----------------------- END SECURITY AUTO CONFIGURATION -------------------------
-
-
-############################################
-
-node.master: true
-node.data: false
-node.ingest: false
-
-############################################
 
 
 
