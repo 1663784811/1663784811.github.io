@@ -56,6 +56,8 @@ path.logs: ./logs
 # address here to expose this node on the network:
 #
 #network.host: 192.168.0.1
+network.host: 0.0.0.0
+
 #
 # By default Elasticsearch listens for HTTP traffic on the first free port it
 # finds starting at 9200. Set a specific HTTP port here:
@@ -70,7 +72,7 @@ http.port: 9200
 # The default list of hosts is ["127.0.0.1", "[::1]"]
 #
 #discovery.seed_hosts: ["192.168.0.136:9200", "192.168.0.111:9200", "192.168.0.150:9200"]
-discovery.seed_hosts: ["192.168.0.136:9200", "192.168.0.111:9200", "192.168.0.150:9200"]
+discovery.seed_hosts: ["192.168.0.136:9300", "192.168.0.111:9300", "192.168.0.150:9300"]
 
 
 
@@ -78,9 +80,7 @@ discovery.seed_hosts: ["192.168.0.136:9200", "192.168.0.111:9200", "192.168.0.15
 # Bootstrap the cluster using an initial set of master-eligible nodes:
 #
 #cluster.initial_master_nodes: ["192.168.0.136:9200", "192.168.0.111:9200", "192.168.0.150:9200"]
-
-
-
+cluster.initial_master_nodes: ["master-1","master-2","master-3"]
 
 
 #
@@ -100,9 +100,9 @@ discovery.seed_hosts: ["192.168.0.136:9200", "192.168.0.111:9200", "192.168.0.15
 # --------------------------------------------------------------------------------
 
 # Enable security features
-xpack.security.enabled: true
+xpack.security.enabled: false
 
-xpack.security.enrollment.enabled: true
+xpack.security.enrollment.enabled: false
 
 # Enable encryption for HTTP API client connections, such as Kibana, Logstash, and Agents
 xpack.security.http.ssl:
@@ -123,8 +123,8 @@ http.host: 0.0.0.0
 
 # Allow other nodes to join the cluster from anywhere
 # Connections are encrypted and mutually authenticated
-transport.host: 0.0.0.0
-
+transport.host: 192.168.0.136
+transport.port: 9300
 #----------------------- END SECURITY AUTO CONFIGURATION -------------------------
 
 
