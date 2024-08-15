@@ -97,6 +97,11 @@ export default navbar([
                 text: "FOC",
                 icon: "chrome",
                 link: "硬件/FOC/01.foc原理.md",
+            },
+            {
+                text: "嵌入式Linux",
+                icon: "chrome",
+                link: "硬件/linux/01.uboot简介.md",
             }
         ]
     },
