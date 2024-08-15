@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as _,c as t}from"./app-GjH8_xLN.js";const c={};function o(r,n){return _(),t("div")}const f=e(c,[["render",o],["__file","03.U8G2移植.html.vue"]]);export{f as default};
