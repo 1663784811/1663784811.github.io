@@ -101,7 +101,7 @@ export default navbar([
             {
                 text: "嵌入式Linux",
                 icon: "chrome",
-                link: "硬件/linux/01.uboot简介.md",
+                link: "硬件/linux/01.Linux系统启动过程.md",
             }
         ]
     },
