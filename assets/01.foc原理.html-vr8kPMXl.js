@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as _,c}from"./app-y5p-Qx3e.js";const o={};function t(r,f){return _(),c("div")}const a=e(o,[["render",t],["__file","01.foc原理.html.vue"]]);export{a as default};
