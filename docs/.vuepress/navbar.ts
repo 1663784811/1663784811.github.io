@@ -89,11 +89,6 @@ export default navbar([
                 link: "硬件/cmake/01.gcc简介.md",
             },
             {
-                text: "QT",
-                icon: "chrome",
-                link: "硬件/QT/01.qt环境搭建.md",
-            },
-            {
                 text: "FOC",
                 icon: "chrome",
                 link: "硬件/FOC/01.foc原理.md",
@@ -102,6 +97,11 @@ export default navbar([
                 text: "嵌入式Linux",
                 icon: "chrome",
                 link: "硬件/linux/01.Linux系统启动过程.md",
+            },
+            {
+                text: "嵌入式QT应用",
+                icon: "chrome",
+                link: "硬件/QT/01.qt环境搭建.md",
             }
         ]
     },
