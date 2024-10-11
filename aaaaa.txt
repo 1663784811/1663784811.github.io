@@ -1,0 +1,20 @@
+# 清理
+make -j8 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- distclean
+
+# 编译生成.config配置
+make -j12 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- orangepi_one_defconfig
+
+# 编译u-boot
+make -j12 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
+
+
+# 烧写u-boot
+sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/sdb bs=1024 seek=8
+
+
+
+
+
+
+
+
