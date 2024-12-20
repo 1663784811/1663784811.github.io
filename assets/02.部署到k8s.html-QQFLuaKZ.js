@@ -1,0 +1,6 @@
+import{_ as a}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as e,c as s,a as n}from"./app-figdigGu.js";const r={},t=n(`<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span> elasticsearch <span class="token parameter variable">--net</span> somenetwork <span class="token parameter variable">-p</span> <span class="token number">9200</span>:9200 <span class="token parameter variable">-p</span> <span class="token number">9300</span>:9300 <span class="token parameter variable">-e</span> <span class="token string">&quot;discovery.type=single-node&quot;</span> elasticsearch:tag
+
+
+<span class="token function">docker</span> pull elasticsearch:8.7.1
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,1),c=[t];function l(i,o){return e(),s("div",null,c)}const m=a(r,[["render",l],["__file","02.部署到k8s.html.vue"]]);export{m as default};
