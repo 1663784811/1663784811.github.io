@@ -1,0 +1,85 @@
+import{_ as n}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as s,c as a,a as e}from"./app-lHntyFhc.js";const t={},p=e(`<h3 id="线程池的参数包括" tabindex="-1"><a class="header-anchor" href="#线程池的参数包括" aria-hidden="true">#</a> 线程池的参数包括</h3><p>corePoolSize（核心线程数）：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>线程池中保持活动状态的线程数量。即使线程处于空闲状态，核心线程也不会被销毁，
+除非调用了 allowCoreThreadTimeOut(true) 方法设置了核心线程的超时时间。
+默认情况下，线程池中的核心线程数为 0。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>maximumPoolSize（最大线程数）：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>线程池中允许存在的最大线程数量。当任务队列已满且当前活动线程数小于最大线程数时
+，线程池会创建新的线程来执行任务。当达到最大线程数时，
+新提交的任务会根据拒绝策略进行处理。默认情况下，最大线程数为 Integer.MAX_VALUE。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>keepAliveTime（线程空闲时间）：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>当线程池中的线程数量超过核心线程数时，
+多余的空闲线程会根据 keepAliveTime 参数进行等待，
+等待时间超过指定时间后将被销毁，直到线程池中的线程数量不超过核心线程数为止。
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>unit（时间单位）：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>keepAliveTime 参数的时间单位，默认为 TimeUnit.SECONDS。
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>workQueue（任务队列）：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>用于保存等待执行的任务的队列。当线程池中的线程数量达到核心线程数时，
+新提交的任务会被放入任务队列中等待执行。
+任务队列可以是有界队列（如 ArrayBlockingQueue）也可以是无界队列（如 LinkedBlockingQueue）。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>threadFactory（线程工厂）：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>用于创建新线程的工厂类。线程池在需要创建新线程时会调用线程工厂来创建线程。
+默认情况下，线程池会使用默认的线程工厂（DefaultThreadFactory）来创建线程。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>handler（拒绝策略）：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>当任务队列已满且无法继续接受新任务时，用于处理新提交的任务的策略。
+常见的拒绝策略包括抛出异常、丢弃任务、丢弃最旧的任务等。
+默认情况下，线程池会使用默认的拒绝策略（AbortPolicy）。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="自定义线程池" tabindex="-1"><a class="header-anchor" href="#自定义线程池" aria-hidden="true">#</a> 自定义线程池</h3><div class="language-java line-numbers-mode" data-ext="java"><pre class="language-java"><code><span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>concurrent<span class="token punctuation">.</span></span><span class="token class-name">AbstractExecutorService</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>concurrent<span class="token punctuation">.</span></span><span class="token class-name">TimeUnit</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>concurrent<span class="token punctuation">.</span></span><span class="token class-name">BlockingQueue</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>concurrent<span class="token punctuation">.</span></span><span class="token class-name">LinkedBlockingQueue</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CustomThreadPool</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractExecutorService</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token keyword">int</span> nThreads<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">BlockingQueue</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Runnable</span><span class="token punctuation">&gt;</span></span> queue<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">volatile</span> <span class="token keyword">boolean</span> isShutdown <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">CustomThreadPool</span><span class="token punctuation">(</span><span class="token keyword">int</span> nThreads<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>nThreads <span class="token operator">=</span> nThreads<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>queue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedBlockingQueue</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token class-name">Runnable</span> task<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>isShutdown<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalStateException</span><span class="token punctuation">(</span><span class="token string">&quot;Executor has been shut down&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        queue<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>task<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>queue<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;=</span> nThreads<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">{</span>
+                <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>isShutdown<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token class-name">Runnable</span> nextTask <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">poll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>nextTask <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        nextTask<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">shutdown</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        isShutdown <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Runnable</span><span class="token punctuation">&gt;</span></span> <span class="token function">shutdownNow</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">shutdown</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span>queue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isShutdown</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> isShutdown<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isTerminated</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> isShutdown <span class="token operator">&amp;&amp;</span> queue<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">awaitTermination</span><span class="token punctuation">(</span><span class="token keyword">long</span> timeout<span class="token punctuation">,</span> <span class="token class-name">TimeUnit</span> unit<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">InterruptedException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">long</span> nanos <span class="token operator">=</span> unit<span class="token punctuation">.</span><span class="token function">toNanos</span><span class="token punctuation">(</span>timeout<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isTerminated</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> nanos <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">TimeUnit</span><span class="token punctuation">.</span><span class="token constant">NANOSECONDS</span><span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            nanos <span class="token operator">-=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token function">isTerminated</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,17),o=[p];function c(i,l){return s(),a("div",null,o)}const k=n(t,[["render",c],["__file","多线程11-线程池.html.vue"]]);export{k as default};
