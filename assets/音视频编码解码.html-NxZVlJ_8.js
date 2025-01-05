@@ -1,4 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as a,c as n,a as s}from"./app-ulAqDJ9T.js";const t="/assets/img-W4k_1Tmn.png",i={},r=s(`<p>H264 、 H265</p><h3 id="h264-基础知识" tabindex="-1"><a class="header-anchor" href="#h264-基础知识" aria-hidden="true">#</a> H264 基础知识</h3><p>在H264编码中有I帧，p帧和B帧。每一帧都相当于一张静止的图像。</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>I 帧： I 帧通常又称之为内部画面，它通常是视频编码的第一帧。
-P 帧： P 帧又称之为前向参考帧，此帧的特点是需要参考前一帧的图像信息才可以正确把图像解码出来。 
-B 帧： B 帧也称之为双向参考帧，
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="`+t+'" alt="img.png"></p>',5),c=[r];function d(_,l){return a(),n("div",null,c)}const p=e(i,[["render",d],["__file","音视频编码解码.html.vue"]]);export{p as default};
