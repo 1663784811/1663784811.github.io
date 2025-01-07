@@ -76,7 +76,7 @@ export default navbar([
             {
                 text: "lvgl",
                 icon: "chrome",
-                link: "硬件/lvgl/lvgl.md",
+                link: "硬件/lvgl/01LVGL.md",
             },
             {
                 text: "u8g2",
