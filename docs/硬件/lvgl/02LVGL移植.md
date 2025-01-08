@@ -35,10 +35,24 @@ lvgl 源码只保留 三个文件夹两个文件
 
 ![img_8.png](img/img_8.png)
 
-修改porting文件夹里的文件名，把_template删除
-![img_9.png](img/img_9.png)
-
 把lvgl 文件夹复制到项目工程
+
+## 第三步 修改配置
+
+
+```text
+lvgl_config
+lvgl_porting
+
+
+
+
+
+
+
+```
+
+
 
 ## 第三步 修改配置
 
