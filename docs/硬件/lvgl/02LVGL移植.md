@@ -39,6 +39,11 @@ lvgl 源码只保留 三个文件夹两个文件
 
 ## 第三步 修改配置
 
+![img_10.png](img/img_10.png)
+
+![img_11.png](img/img_11.png)
+
+![img_12.png](img/img_12.png)
 
 ```text
 lvgl_config
