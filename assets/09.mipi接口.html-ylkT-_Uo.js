@@ -1,0 +1,13 @@
+import{_ as a}from"./plugin-vue_export-helper-x3n3nnut.js";import{r,o as d,c as s,b as e,d as i,e as t,a as c}from"./app-o3AK3oAz.js";const o={},l={href:"https://www.mipi.org",target:"_blank",rel:"noopener noreferrer"},p=c(`<p>mipi 是一种接口标准，广泛应用于移动设备的显示、摄像头、传感器等组件之间的高速数据传输。MIPI联盟发布了一系列标准，这些标准覆盖了显示、摄像头、音频、触控等多个方面。</p><h3 id="mipi-dsi" tabindex="-1"><a class="header-anchor" href="#mipi-dsi" aria-hidden="true">#</a> MIPI DSI</h3><p>用于将图像数据从处理器传输到显示器（如LCD、OLED面板）。<br> DSI采用高速串行接口，常用于手机和平板的显示屏连接。<br> DSI的特点是支持高分辨率、低功耗的显示输出。</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>MIPI DSI最少需要4根线（1对时钟线 + 1对数据线）
+最多可以使用10根线（1对时钟线 + 4对数据线）
+
+数据线:
+    1.MIPI DSI接口的主要数据传输通过数据线完成。数据线可以是1到4对差分信号线，
+        即1到4个数据通道（每个通道包含两根线：D+ 和 D-）。这种差分传输方式可以有效减少噪声和提高传输速度。
+    2.每对差分线称为一个数据通道（Data Lane），并且可以根据显示器带宽的需求选择使用1、2、3或4个数据通道。
+    3.每个通道可以传输高速数据，因此通过增加通道数量可以提升总带宽。
+    
+时钟线
+    MIPI DSI使用一对差分信号线作为时钟信号（CLK+ 和 CLK-），用于数据同步。
+    时钟线用于同步数据线上的数据传输，并在高速模式下保持数据与时钟的精确对齐。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="mipi-csi" tabindex="-1"><a class="header-anchor" href="#mipi-csi" aria-hidden="true">#</a> MIPI CSI</h3><p>用于连接摄像头模块与处理器。<br> CSI接口允许高速传输摄像头捕获的图像数据，支持多个并行通道，常用于移动设备中的多摄像头配置。</p><h3 id="mipi-c-phy-和-d-phy" tabindex="-1"><a class="header-anchor" href="#mipi-c-phy-和-d-phy" aria-hidden="true">#</a> MIPI C-PHY 和 D-PHY</h3><p>C-PHY 和 D-PHY 是物理层协议，分别用于传输摄像头、显示等设备的数据。<br> D-PHY：差分对信号传输，主要用于MIPI DSI和CSI。<br> C-PHY：一种三电平信号传输方式，支持更多的并发数据流，主要用于提高性能和降低功耗。</p><h3 id="mipi-i3c" tabindex="-1"><a class="header-anchor" href="#mipi-i3c" aria-hidden="true">#</a> MIPI I3C</h3><p>这是I²C总线的改进版本，支持更高的数据速率和更复杂的功能，常用于传感器接口。 <br> 设计用于处理器和多种传感器之间的低速通信。</p><h3 id="mipi-unipro-unified-protocol" tabindex="-1"><a class="header-anchor" href="#mipi-unipro-unified-protocol" aria-hidden="true">#</a> MIPI UniPro (Unified Protocol)</h3><p>UniPro协议用于支持高速传输的模块化接口，通常应用于存储设备和其他外围设备。</p><h3 id="mipi-rffe-rf-front-end-interface" tabindex="-1"><a class="header-anchor" href="#mipi-rffe-rf-front-end-interface" aria-hidden="true">#</a> MIPI RFFE (RF Front-End Interface)</h3><p>这个接口主要用于移动设备中的射频前端，允许基带处理器控制射频设备。</p>`,14);function h(m,I){const n=r("ExternalLinkIcon");return d(),s("div",null,[e("p",null,[e("a",l,[i("MIPI联盟官网"),t(n)]),i("：https://www.mipi.org")]),p])}const f=a(o,[["render",h],["__file","09.mipi接口.html.vue"]]);export{f as default};
