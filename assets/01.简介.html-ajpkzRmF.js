@@ -1,0 +1,2 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c as a,a as i}from"./app-3xh9dfXI.js";const r={},s=i(`<h3 id="官网" tabindex="-1"><a class="header-anchor" href="#官网" aria-hidden="true">#</a> 官网</h3><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>https://www.activiti.org/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),c=[s];function n(d,o){return t(),a("div",null,c)}const h=e(r,[["render",n],["__file","01.简介.html.vue"]]);export{h as default};
