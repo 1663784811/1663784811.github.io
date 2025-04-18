@@ -22,11 +22,11 @@ export default navbar([
                 icon: "chrome",
                 link: "java/01.环境搭建.md",
             },
-            // {
-            //     text: "python",
-            //     icon: "chrome",
-            //     link: "python/01.环境搭建.md",
-            // },
+            {
+                text: "python",
+                icon: "chrome",
+                link: "python/01.环境搭建.md",
+            },
             // {
             //     text: "汇编",
             //     icon: "chrome",

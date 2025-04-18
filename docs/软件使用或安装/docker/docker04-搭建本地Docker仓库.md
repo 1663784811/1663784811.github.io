@@ -67,6 +67,9 @@ docker login 192.168.1.130:5000 -u docker -p docker
 打标签
 ```shell
 docker tag 本地镜像名 标签名
+
+docker tag m.daocloud.io/docker.io/nacos/nacos-server:v2.5.1 nacos/nacos-server:v2.5.1
+
 ```
 上传
 ```shell
