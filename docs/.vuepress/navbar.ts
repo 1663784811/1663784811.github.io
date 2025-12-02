@@ -121,7 +121,7 @@ export default navbar([
                 link: "科学基础知识/数学物理/数学/01.初中数学.md",
             },
             {
-                text: "数学/物理",
+                text: "物理",
                 icon: "chrome",
                 link: "科学基础知识/数学物理/物理/01.电路基础.md",
             },
