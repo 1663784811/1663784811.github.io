@@ -116,9 +116,14 @@ export default navbar([
         prefix: "/",
         children: [
             {
+                text: "数学",
+                icon: "chrome",
+                link: "科学基础知识/数学物理/数学/01.初始中数学",
+            },
+            {
                 text: "数学/物理",
                 icon: "chrome",
-                link: "科学基础知识/数学物理/01.电路基础",
+                link: "科学基础知识/数学物理/物理/01.电路基础",
             },
             {
                 text: "生物/化学",
