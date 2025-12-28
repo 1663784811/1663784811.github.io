@@ -1,0 +1,6 @@
+import{_ as s}from"./plugin-vue_export-helper-x3n3nnut.js";import{r,o as a,c as i,b as e,d as t,e as o,a as d}from"./app-DfdOvKvb.js";const c="/assets/img_12-MiKMojte.png",l="/assets/img_13-SDgAZVId.png",_="/assets/img_14-pAZASL8_.png",m={},p=e("h3",{id:"下载qt",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#下载qt","aria-hidden":"true"},"#"),t(" 下载QT")],-1),h={href:"https://download.qt.io/archive/qt/",target:"_blank",rel:"noopener noreferrer"},g=d('<p>https://www.qt.io/download-dev</p><p><img src="'+c+'" alt="img_12.png"></p><p><img src="'+l+'" alt="img_13.png"></p><p><img src="'+_+`" alt="img_14.png"></p><h3 id="安装" tabindex="-1"><a class="header-anchor" href="#安装" aria-hidden="true">#</a> 安装</h3><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>xxx.exe --mirror https://mirrors.aliyun.com/qt
+
+
+xxx.exe --mirror https://mirrors.tuna.tsinghua.edu.cn/qt
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,6);function u(x,v){const n=r("ExternalLinkIcon");return a(),i("div",null,[p,e("p",null,[e("a",h,[t("官网下载地址"),o(n)])]),g])}const q=s(m,[["render",u],["__file","01.qt环境搭建.html.vue"]]);export{q as default};
