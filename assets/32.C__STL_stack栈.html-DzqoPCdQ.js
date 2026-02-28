@@ -1,0 +1,1 @@
+import{_}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as e,c as t}from"./app-35Zkv-qx.js";const c={};function o(r,s){return e(),t("div")}const f=_(c,[["render",o],["__file","32.C__STL_stack栈.html.vue"]]);export{f as default};
