@@ -13,14 +13,21 @@ java -Xms512m -Xmx2g YourMainClass
 -Xms<size>：设置 Java 堆的初始大小。默认情况下，初始堆大小为物理内存的1/64。
 -Xmx<size>：设置 Java 堆的最大大小。默认情况下，最大堆大小为物理内存的1/4
 
+// =================================================
+
 -Xss<size>：设置线程栈大小。
 -XX:MaxMetaspaceSize=<size>：设置元空间的最大大小。
 -XX:MaxPermSize=<size>：设置永久代的最大大小（Java 8之前使用）。
+
+// =================================================
 
 -XX:+UseG1GC：启用G1垃圾收集器。
 -XX:+UseConcMarkSweepGC：启用CMS（并发标记清除）垃圾收集器。
 -XX:+UseParallelGC：启用并行垃圾收集器。
 -XX:+UseSerialGC：启用串行垃圾收集器
+
+// =================================================
+
 
 -XX:NewSize=<size>：设置新生代初始大小。
 -XX:MaxNewSize=<size>：设置新生代最大大小。
